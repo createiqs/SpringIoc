@@ -12,7 +12,7 @@ public class Client {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		GreetingMsg greeting=(GreetingMsg) context.getBean("message");
 		greeting.msg();
-		
+//		Employee employe=new Employee(1, "", 1233);
 		Employee employee=(Employee) context.getBean("employee");
 		System.out.println(employee);
 	}

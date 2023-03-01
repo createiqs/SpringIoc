@@ -7,15 +7,22 @@
 	<bean id="message" class="com.ciq.pojo.GreetingMsg">
 		<!-- <property name="id" value="1"></property> -->
 		<!-- <property name="name" value="anil"></property> -->
-	
+
 	</bean>
-	
+	<bean id="add" class="com.ciq.pojo.Address">
+		<property name="id" value="1"></property>
+		<property name="city" value="Hyderabad"></property>
+		<property name="state" value="TS"></property>
+	</bean>
+
 	<bean id="employee" class="com.ciq.pojo.Employee">
-	
-	<constructor-arg name="id" value="1"></constructor-arg>
-	<constructor-arg name="name" value="ram"></constructor-arg>
-	<constructor-arg name="salary" value="134444"></constructor-arg>
+
+		<constructor-arg name="id" value="1"></constructor-arg>
+		<constructor-arg name="name" value="ram"></constructor-arg>
+		<constructor-arg name="salary" value="134444"></constructor-arg>
+		<constructor-arg name="address" ref="add"></constructor-arg>
 	</bean>
+
 
 
 </beans>
