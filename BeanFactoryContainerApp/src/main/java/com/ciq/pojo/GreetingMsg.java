@@ -8,9 +8,10 @@ public class GreetingMsg {
 
 	private int id;
 	private String name;
-	
+
 	public GreetingMsg() {
-		// TODO Auto-generated constructor stub
+		System.out.println("Creation of the object");
+
 	}
 
 	public GreetingMsg(int id, String name) {
@@ -18,21 +19,14 @@ public class GreetingMsg {
 		this.name = name;
 	}
 
-
-
-
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
- 
 
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	
 	public int getId() {
 		return id;
 	}
@@ -46,7 +40,14 @@ public class GreetingMsg {
 		return "GreetingMsg [id=" + id + ", name=" + name + "]";
 	}
 
+	public void hi() {
+		System.out.println("o	When a bean is instantiated, it may be required to perform some "
+				+ "initialization to get it into a usable state");
+	}
 
+	public void bye() {
+		System.out.println(
+				"When the bean is no longer from the required and is removed container, some cleanup may be required. If any destruction methods are configured");
+	}
 
- 
 }
